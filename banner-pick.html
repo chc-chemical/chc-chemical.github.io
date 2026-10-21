@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banner 当前轮播</title>
+  <style>
+    body{font-family:system-ui,sans-serif;margin:0;background:#f4f2ef;color:#111;padding:24px}
+    h1{font-size:22px;margin:0 0 8px}
+    p{color:#666;margin:0 0 24px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+    figure{margin:0;background:#fff;border:1px solid #e4dfd8;overflow:hidden}
+    img{display:block;width:100%;height:160px;object-fit:cover}
+    figcaption{padding:10px 12px;font-size:13px}
+    a{color:#0b2a5b}
+  </style>
+</head>
+<body>
+  <h1>首页 Banner（按顺序）</h1>
+  <p>当前轮播共 4 张：banner-01 … banner-04。</p>
+  <div class="grid">
+    <figure>
+      <img src="assets/banner/banner-01.jpg?v=45" alt="banner-01" />
+      <figcaption><strong>banner-01.jpg</strong> · 第 1 张</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/banner/banner-02.jpg?v=45" alt="banner-02" />
+      <figcaption><strong>banner-02.jpg</strong> · 第 2 张</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/banner/banner-03.jpg?v=45" alt="banner-03" />
+      <figcaption><strong>banner-03.jpg</strong> · 第 3 张</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/banner/banner-04.jpg?v=45" alt="banner-04" />
+      <figcaption><strong>banner-04.jpg</strong> · 第 4 张</figcaption>
+    </figure>
+  </div>
+  <p style="margin-top:24px"><a href="index.html">← 返回首页</a></p>
+</body>
+</html>

@@ -254,7 +254,7 @@ a {
   inset: 0;
   background:
     linear-gradient(120deg, rgba(11, 11, 12, 0.72) 0%, rgba(11, 42, 91, 0.55) 55%, rgba(11, 11, 12, 0.7) 100%),
-    url("../assets/banner/hero-products.jpg?v=41")
+    url("../assets/banner/hero-products.jpg?v=42")
       center / cover no-repeat;
   z-index: -1;
   transform: scale(1.02);
@@ -264,7 +264,7 @@ a {
 .hero--about::before {
   background-image:
     linear-gradient(120deg, rgba(11, 11, 12, 0.72) 0%, rgba(11, 42, 91, 0.55) 55%, rgba(11, 11, 12, 0.7) 100%),
-    url("../assets/banner/hero-about.jpg?v=41");
+    url("../assets/banner/hero-about.jpg?v=42");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -273,7 +273,7 @@ a {
 .hero--products::before {
   background-image:
     linear-gradient(120deg, rgba(11, 11, 12, 0.72) 0%, rgba(11, 42, 91, 0.55) 55%, rgba(11, 11, 12, 0.7) 100%),
-    url("../assets/banner/hero-products.jpg?v=41");
+    url("../assets/banner/hero-products.jpg?v=42");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -282,7 +282,7 @@ a {
 .hero--contact::before {
   background-image:
     linear-gradient(120deg, rgba(11, 11, 12, 0.72) 0%, rgba(11, 42, 91, 0.55) 55%, rgba(11, 11, 12, 0.7) 100%),
-    url("../assets/banner/hero-contact.jpg?v=41");
+    url("../assets/banner/hero-contact.jpg?v=42");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -996,7 +996,7 @@ a.product-card:hover {
   min-height: 280px;
   background:
     linear-gradient(160deg, rgba(11, 42, 91, 0.55), rgba(11, 11, 12, 0.35)),
-    url("../assets/about/facility-fab.jpg?v=41")
+    url("../assets/banner/banner-03.jpg?v=42")
       center / cover no-repeat;
 }
 
