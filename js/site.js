@@ -10,7 +10,7 @@
     });
   }
 
-  // Home banner auto slide (every 5s)
+  // Home banner auto slide (every 10s)
   var banner = document.querySelector("[data-banner]");
   if (banner) {
     var slides = Array.prototype.slice.call(banner.querySelectorAll(".banner-slide"));
@@ -47,7 +47,7 @@
 
     function arm() {
       clearTimeout(timer);
-      timer = setTimeout(function () { go(index + 1); }, 5000);
+      timer = setTimeout(function () { go(index + 1); }, 10000);
     }
 
     if (prev) prev.addEventListener("click", function () { go(index - 1); });
