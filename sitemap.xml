@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://chc-chemical.github.io/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://chc-chemical.github.io/about.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chc-chemical.github.io/biz-consult.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chc-chemical.github.io/biz-design.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chc-chemical.github.io/biz-construct.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chc-chemical.github.io/biz-test.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chc-chemical.github.io/biz-maintain.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chc-chemical.github.io/fields.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chc-chemical.github.io/cases.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://chc-chemical.github.io/tech.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://chc-chemical.github.io/news.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://chc-chemical.github.io/culture.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://chc-chemical.github.io/products.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://chc-chemical.github.io/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://chc-chemical.github.io/products/bsgs-bsgr.html</loc><priority>0.6</priority></url>

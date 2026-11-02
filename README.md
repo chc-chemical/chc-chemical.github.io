@@ -1,7 +1,7 @@
 # 华瑞化学官网（GitHub Pages）
 
-**华瑞化学科技（无锡）有限公司**  
-CHC Chemical Technology (Wuxi) Co., Ltd
+**江苏中核华瑞电子科技有限公司**  
+CHC Technology Co., Ltd
 
 内容来源：`../chc-sources/`（简介 PPT、联系方式、资质 PDF、Logo）
 

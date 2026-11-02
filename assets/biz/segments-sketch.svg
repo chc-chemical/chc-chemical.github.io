@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" fill="#f4f7fb"/>
+  <g stroke="#00349b" stroke-opacity="0.06" stroke-width="1">
+    <!-- soft grid -->
+    <path d="M0 90H1600M0 180H1600M0 270H1600M0 360H1600M0 450H1600M0 540H1600M0 630H1600M0 720H1600M0 810H1600"/>
+    <path d="M160 0V900M320 0V900M480 0V900M640 0V900M800 0V900M960 0V900M1120 0V900M1280 0V900M1440 0V900"/>
+  </g>
+  <!-- sketch building / plant outline, bottom-right -->
+  <g stroke="#00349b" stroke-opacity="0.1" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M980 720V480h90V390h70V480h110V720"/>
+    <path d="M1070 390V320"/>
+    <path d="M1045 320h120"/>
+    <path d="M1105 320V280"/>
+    <path d="M1250 720V520h160V720"/>
+    <path d="M1280 520V470h100V520"/>
+    <path d="M1330 470V430"/>
+    <circle cx="1330" cy="410" r="14"/>
+    <path d="M980 720H1410"/>
+    <!-- windows -->
+    <path d="M1010 540h30v40h-30zM1010 600h30v40h-30zM1120 540h30v40h-30zM1120 600h30v40h-30z"/>
+    <path d="M1285 560h40v50h-40zM1345 560h40v50h-40z"/>
+  </g>
+  <!-- sketch pipe / process line, left -->
+  <g stroke="#00349b" stroke-opacity="0.09" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 640H280"/>
+    <path d="M280 640V520H420"/>
+    <circle cx="420" cy="520" r="18"/>
+    <path d="M438 520H560V420"/>
+    <path d="M560 420H700"/>
+    <path d="M640 400V440"/>
+    <path d="M180 620V660M220 620V660"/>
+  </g>
+</svg>
