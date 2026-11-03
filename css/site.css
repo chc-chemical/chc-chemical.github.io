@@ -4421,7 +4421,7 @@ a.csr-card-media {
     padding: 0;
   }
 
-  .nav-panel-photo,
+  .nav-drop.nav-panel .nav-panel-photo,
   .nav-panel-copy {
     display: none;
   }
