@@ -4410,27 +4410,45 @@ a.csr-card-media {
   .nav-drop.nav-panel {
     position: static;
     width: auto;
-    padding: 0 0 8px 12px;
+    padding: 0 0 4px 12px;
     box-shadow: none;
     background: transparent;
+    min-height: 0;
   }
 
   .nav-panel-inner {
     display: block;
     max-width: none;
     padding: 0;
+    min-height: 0;
+    gap: 0;
   }
 
   .nav-drop.nav-panel .nav-panel-photo,
-  .nav-panel-copy {
+  .nav-drop.nav-panel .nav-panel-copy {
     display: none;
+    height: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .nav-panel-links {
+    display: block;
+    min-height: 0;
+    justify-content: flex-start;
   }
 
   .nav-drop.nav-panel .nav-panel-links a {
     min-height: 0;
-    padding: 9px 12px;
+    padding: 8px 12px;
     border: 0;
     font-size: 15px;
+  }
+
+  .nav-drop.nav-panel .nav-panel-links a:last-child {
+    border-bottom: 0;
   }
 
   .nav-drop.nav-panel .nav-panel-links a::before {
