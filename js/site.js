@@ -7,9 +7,10 @@
   var siteHeader = document.querySelector(".site-header");
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
-      nav.classList.toggle("is-open");
+      var open = nav.classList.toggle("is-open");
+      document.body.classList.toggle("nav-open", open);
       if (siteHeader && document.body.classList.contains("page-home")) {
-        siteHeader.classList.toggle("is-solid", nav.classList.contains("is-open") || window.scrollY > 40);
+        siteHeader.classList.toggle("is-solid", open || window.scrollY > 40);
       }
     });
     nav.querySelectorAll("a").forEach(function (link) {
@@ -19,6 +20,7 @@
           return;
         }
         nav.classList.remove("is-open");
+        document.body.classList.remove("nav-open");
       });
     });
   }
@@ -326,7 +328,8 @@
 
     window.addEventListener("wheel", function (e) {
       if (e.ctrlKey) return;
-      if (e.target.closest && e.target.closest("#location")) return;
+      if (nav && nav.classList.contains("is-open")) return;
+      if (e.target.closest && e.target.closest("#location, .nav, [data-nav]")) return;
       e.preventDefault();
       if (!e.deltaY) return;
       var now = performance.now();
@@ -360,7 +363,11 @@
     var touchHijack = false;
     window.addEventListener("touchstart", function (e) {
       var t = e.target;
-      touchHijack = !t.closest("#location, input, textarea, select");
+      if ((nav && nav.classList.contains("is-open")) || t.closest("#location, input, textarea, select, .nav, [data-nav], .site-header")) {
+        touchHijack = false;
+      } else {
+        touchHijack = true;
+      }
       touchY = e.touches[0].clientY;
     }, { passive: true });
     window.addEventListener("touchmove", function (e) {
@@ -511,7 +518,10 @@
       var href = link.getAttribute("href") || "";
       if (href.charAt(0) !== "#") return;
       setActive(href.slice(1));
-      if (nav) nav.classList.remove("is-open");
+      if (nav) {
+        nav.classList.remove("is-open");
+        document.body.classList.remove("nav-open");
+      }
     });
   });
 })();
