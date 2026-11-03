@@ -3479,12 +3479,6 @@ a.project-row.is-link:hover strong {
 }
 
 a.step-exit {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 22px;
-  border: 1px solid var(--brand);
-  border-radius: 999px;
-  background: var(--white);
   color: var(--brand);
   font-weight: 600;
   white-space: nowrap;
@@ -3496,7 +3490,6 @@ a.step-exit {
 }
 
 a.step-exit:hover {
-  border-color: var(--link);
   color: var(--link);
 }
 
