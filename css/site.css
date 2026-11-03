@@ -584,11 +584,11 @@ body.page-fields {
 .banner-copy {
   position: absolute;
   z-index: 2;
-  left: 7.5%;
+  left: clamp(16px, 7.5%, 96px);
   top: 42%;
   width: fit-content;
-  max-width: calc(100% - 15%);
-  padding-bottom: 18px;
+  max-width: min(92%, calc(100% - 32px));
+  padding-bottom: clamp(10px, 1.4vw, 18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.92);
   color: #fff;
   opacity: 0;
@@ -606,7 +606,7 @@ body.page-fields {
 .banner-copy h3 {
   margin: 0;
   font-family: "Noto Serif SC", serif;
-  font-size: 66px;
+  font-size: clamp(26px, 2.8vw + 18px, 66px);
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: 0.12em;
@@ -627,9 +627,9 @@ body.page-fields {
 }
 
 .banner-copy h2 {
-  margin: 12px 0 0;
+  margin: clamp(8px, 1vw, 12px) 0 0;
   font-family: "Noto Sans SC", "PingFang SC", sans-serif;
-  font-size: 24px;
+  font-size: clamp(14px, 1vw + 10px, 24px);
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.06em;
@@ -1198,10 +1198,6 @@ body.page-fields {
 
   .biz-shot {
     padding: 28px 20px;
-  }
-
-  .biz-shot-num {
-    font-size: 56px;
   }
 }
 
@@ -2938,15 +2934,94 @@ a.project-row.is-link:hover strong {
   }
 
   .banner-dots {
-    left: 20px;
-    bottom: 22px;
-    gap: 12px;
+    left: 16px;
+    bottom: 18px;
+    gap: 10px;
   }
 
   .banner-copy {
     left: 5%;
-    top: 30%;
-    max-width: 90%;
+    right: 5%;
+    top: 32%;
+    width: auto;
+    max-width: none;
+  }
+
+  .banner-copy--stack {
+    top: 28%;
+  }
+
+  .banner-copy h3 {
+    font-size: clamp(24px, 7.2vw, 40px);
+    letter-spacing: 0.08em;
+    white-space: normal;
+  }
+
+  .banner-copy--wide h3 {
+    letter-spacing: 0.02em;
+  }
+
+  .banner-copy--stack h3 {
+    white-space: normal;
+  }
+
+  .banner-copy h2 {
+    font-size: clamp(13px, 3.6vw, 18px);
+    letter-spacing: 0.04em;
+  }
+
+  .about-shortcuts {
+    gap: clamp(16px, 5vw, 28px);
+  }
+
+  .about-shortcuts strong {
+    font-size: clamp(12px, 3.2vw, 15px);
+  }
+
+  .about-ico {
+    width: clamp(40px, 11vw, 52px);
+    height: clamp(40px, 11vw, 52px);
+  }
+
+  .about-ico svg {
+    width: 80%;
+    height: 80%;
+  }
+
+  .home-about .prose {
+    font-size: clamp(14px, 3.6vw, 15px);
+  }
+
+  .biz-shot-num {
+    font-size: clamp(40px, 14vw, 56px);
+  }
+
+  .biz-shot-copy h3 {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  .biz-shot-copy p {
+    font-size: clamp(13px, 3.5vw, 16px);
+  }
+
+  .fields-head h2 {
+    font-size: clamp(24px, 6.5vw, 36px);
+  }
+
+  .fields-head p {
+    font-size: clamp(13px, 3.5vw, 16px);
+  }
+
+  .fields-pane strong {
+    font-size: clamp(16px, 4.5vw, 22px);
+  }
+
+  .coverage-stats strong {
+    font-size: clamp(28px, 9vw, 40px);
+  }
+
+  .coverage-name {
+    font-size: clamp(15px, 4.2vw, 18px);
   }
 
   .line-card { min-height: 220px; }
@@ -2993,6 +3068,46 @@ a.project-row.is-link:hover strong {
 @media (max-width: 720px) {
   .profile-photos { grid-template-columns: 1fr; }
   .partner-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .banner-copy {
+    top: 30%;
+    left: 16px;
+    right: 16px;
+  }
+
+  .banner-copy--stack {
+    top: 26%;
+  }
+
+  .banner-copy h3 {
+    font-size: clamp(22px, 8vw, 32px);
+    letter-spacing: 0.06em;
+    line-height: 1.35;
+  }
+
+  .banner-copy h2 {
+    font-size: clamp(12px, 3.8vw, 15px);
+    line-height: 1.55;
+  }
+
+  .biz-steps a {
+    min-width: 100%;
+    padding: 10px 12px;
+  }
+
+  .biz-steps a strong {
+    font-size: 14px;
+  }
+
+  .biz-stage {
+    min-height: 360px;
+  }
+
+  .about-shortcuts {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
 }
 
 
