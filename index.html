@@ -36,13 +36,21 @@
     <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-  <link rel="stylesheet" href="css/site.css?v=259" />
+  <link rel="stylesheet" href="css/site.css?v=313" />
 </head>
 <body class="page-home">
-  <header class="site-header">
+  <nav class="home-dots" data-home-dots aria-label="首页分屏导航">
+    <button type="button" class="is-active" aria-label="首屏" aria-current="true"></button>
+    <button type="button" aria-label="关于中核华瑞"></button>
+    <button type="button" aria-label="业务板块"></button>
+    <button type="button" aria-label="服务行业"></button>
+    <button type="button" aria-label="项目分布"></button>
+    <button type="button" aria-label="合作伙伴"></button>
+  </nav>
+  <header class="site-header is-over-hero">
     <div class="header-inner">
       <a class="brand has-logo" href="index.html">
-        <img class="brand-logo is-wide" src="assets/logo-v1.png" alt="中核华瑞" />
+        <img class="brand-logo is-wide" src="assets/logo-v1.png?v=4" alt="中核华瑞" />
         <div class="brand-text">
           <strong>中核华瑞科技</strong>
           <span>CHC Technology Co., Ltd.</span>
@@ -52,13 +60,13 @@
         <span></span><span></span><span></span>
       </button>
             <nav class="nav" data-nav>
-        <a href="index.html" class="is-active">首页</a>
+        <a href="index.html">首页</a>
         <div class="nav-item">
           <a class="nav-link" href="about.html">关于我们</a>
           <div class="nav-drop nav-panel">
             <div class="nav-panel-inner">
               <a class="nav-panel-photo" href="about.html" aria-label="关于我们">
-                <img src="assets/banner/about-campus.jpg" alt="" />
+                <img src="assets/banner/about-campus.jpg?v=5" alt="" />
               </a>
               <div class="nav-panel-copy">
                 <strong>关于我们</strong>
@@ -79,7 +87,7 @@
           <div class="nav-drop nav-panel">
             <div class="nav-panel-inner">
               <a class="nav-panel-photo" href="cases.html" aria-label="业务案例">
-                <img src="assets/banner/about-banner.jpg" alt="" />
+                <img src="assets/banner/about-banner.jpg?v=5" alt="" />
               </a>
               <div class="nav-panel-copy">
                 <strong>业务案例</strong>
@@ -103,7 +111,7 @@
           <div class="nav-drop nav-panel">
             <div class="nav-panel-inner">
               <a class="nav-panel-photo" href="tech.html" aria-label="核心技术">
-                <img src="assets/banner/banner-office-facade.jpg" alt="" />
+                <img src="assets/banner/banner-office-facade.jpg?v=5" alt="" />
               </a>
               <div class="nav-panel-copy">
                 <strong>核心技术</strong>
@@ -122,7 +130,7 @@
           <div class="nav-drop nav-panel">
             <div class="nav-panel-inner">
               <a class="nav-panel-photo" href="news.html" aria-label="公司动态">
-                <img src="assets/banner/news-campus.jpg?v=3" alt="" />
+                <img src="assets/banner/news-campus.jpg?v=5" alt="" />
               </a>
               <div class="nav-panel-copy">
                 <strong>公司动态</strong>
@@ -181,7 +189,7 @@
           <div class="nav-drop nav-panel">
             <div class="nav-panel-inner">
               <a class="nav-panel-photo" href="fields.html" aria-label="业务领域">
-                <img src="assets/banner/about-banner.jpg" alt="" />
+                <img src="assets/banner/about-banner.jpg?v=5" alt="" />
               </a>
               <div class="nav-panel-copy">
                 <strong>业务领域</strong>
@@ -202,44 +210,79 @@
 
   <section class="home-photo" data-banner aria-label="现场与设备">
     <div class="banner-track">
-      <div class="banner-slide is-active" style="background-image:url('assets/banner/banner-campus.jpg?v=1')"></div>
-      <div class="banner-slide" style="background-image:url('assets/banner/about-campus.jpg?v=1')"></div>
-      <div class="banner-slide" style="background-image:url('assets/banner/banner-office-facade.jpg?v=1')"></div>
-      <div class="banner-slide" style="background-image:url('assets/banner/banner-cleanroom.jpg?v=1')"></div>
-    </div>
-    <div class="home-intro">
-      <div class="wrap">
-        <p class="banner-slogan is-on">
-          <strong><span>以人为本</span><span>和谐诚信</span><span>持续创新</span><span>安全环保</span></strong>
-        </p>
-        <p class="banner-slogan">
-          <strong>创建业界一流的科技型工程公司</strong>
-        </p>
-        <p class="banner-slogan">
-          <strong><span>科技与工业完美结合</span><span>创绿色工业，护生态世界</span></strong>
-        </p>
-        <p class="banner-slogan">
-          <strong>洁净空间 · 精密系统 · 可靠交付</strong>
-        </p>
+      <div class="banner-slide is-active">
+        <div class="banner-bg" style="background-image:url('assets/banner/banner-campus.jpg?v=1')"></div>
+        <div class="banner-copy banner-copy--stack">
+          <h3>
+            <span>以人为本</span>
+            <span>和谐诚信</span>
+            <span>持续创新</span>
+            <span>安全环保</span>
+          </h3>
+        </div>
+      </div>
+      <div class="banner-slide">
+        <div class="banner-bg" style="background-image:url('assets/banner/about-campus.jpg?v=5')"></div>
+        <div class="banner-copy banner-copy--wide">
+          <h3>创建业界一流的科技型工程公司</h3>
+          <h2>从规划、设计、施工到运维的一站式产业化系统服务</h2>
+        </div>
+      </div>
+      <div class="banner-slide">
+        <div class="banner-bg" style="background-image:url('assets/banner/banner-office-facade.jpg?v=5')"></div>
+        <div class="banner-copy">
+          <h3>科技与工业完美结合</h3>
+          <h2>创绿色工业，护生态世界</h2>
+        </div>
+      </div>
+      <div class="banner-slide">
+        <div class="banner-bg banner-bg--bright" style="background-image:url('assets/banner/banner-cleanroom.jpg?v=2')"></div>
+        <div class="banner-copy banner-copy--wide">
+          <h3>洁净空间 · 精密系统 · 可靠交付</h3>
+          <h2>特种气体与化学品供给系统工程专家</h2>
+        </div>
       </div>
     </div>
-    <button class="banner-nav prev" type="button" data-banner-prev aria-label="上一张">‹</button>
-    <button class="banner-nav next" type="button" data-banner-next aria-label="下一张">›</button>
     <div class="banner-dots" data-banner-dots></div>
   </section>
 
-  <section class="page-band home-about">
-    <div class="wrap about-split">
-      <div>
-        <h2 data-aos="fade-right">关于中核华瑞</h2>
-        <div class="prose" data-aos="fade-right" data-aos-delay="100">
+  <section class="home-about" id="about">
+    <div class="about-shell">
+      <div class="about-main" data-aos="fade-right">
+        <h2>关于中核华瑞</h2>
+        <div class="prose">
           <p>中核华瑞坐落于中国长三角经济区核心城市无锡。公司全称江苏中核华瑞电子科技有限公司（中文简称“中核华瑞”，英文简称“CHC”）。</p>
-          <p>公司业务涵盖工程设计咨询、工程承包、设备制造，提供从项目规划、设计、施工、运营、维护到设备制造的全面完整的产业化系统服务。公司继承传统能源化工和传统机电的安装业务，同时致力于新兴产业，在半导体微电子、清洁能源、生物制药、绿色环保等领域开展研发和建设，先后在北京、上海、天津、成都、南京、深圳、青岛、苏州、常州等城市建立了良好的客户关系，并设立了服务机构。我们追求科技与工业的完美结合，拥有不断创新的设计团队和经验丰富的工程团队，为客户和社会谱写和谐、高效、品质的华章。</p>
-          <p>我们的足迹早已留在全国的大江南北，同时也以诚信优质的服务，在国外建立了良好的声誉。方寸之间彰显孜孜不倦和全力以赴。我们充满理想，勇于挑战，追求革新，以不断超越创新的精神打造科技型工程公司。</p>
+          <p>公司业务涵盖工程设计咨询、工程承包、设备制造，提供从项目规划、设计、施工、运营、维护到设备制造的全面完整的产业化系统服务。我们追求科技与工业的完美结合，以不断超越创新的精神打造科技型工程公司。</p>
         </div>
-        <p class="home-about-cta" data-aos="fade-right" data-aos-delay="150">
-          <a class="text-more" href="about.html">了解更多<span aria-hidden="true">→</span></a>
+        <p class="home-about-cta">
+          <a class="text-more" href="about.html">查看详情<span aria-hidden="true">→</span></a>
         </p>
+        <ul class="about-shortcuts" aria-label="关于快捷入口">
+          <li>
+            <a href="about.html#profile">
+              <span class="about-ico" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M8 40V16l16-8 16 8v24" stroke="currentColor" stroke-width="2"/><path d="M18 40V28h12v12M24 18v4" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+              <strong>公司介绍</strong>
+            </a>
+          </li>
+          <li>
+            <a href="about.html#history">
+              <span class="about-ico" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M10 36V24h6v12M21 36V18h6v18M32 36V12h6v24" stroke="currentColor" stroke-width="2"/><path d="M10 14l22-6 2 8" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+              <strong>发展历程</strong>
+            </a>
+          </li>
+          <li>
+            <a href="culture.html">
+              <span class="about-ico" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M12 36V14l12 4v22M36 36V14l-12 4" stroke="currentColor" stroke-width="2"/><path d="M12 14h24" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+              <strong>企业文化</strong>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="about-visual" data-aos="fade-left">
         <img src="assets/about/head_v2.jpg" alt="中核华瑞" />
@@ -247,103 +290,129 @@
     </div>
   </section>
 
-  <section class="page-band alt home-biz" id="biz">
-    <div class="wrap">
-      <div class="band-head" data-aos="fade-down">
-        <p class="outline">Business</p>
-        <p class="zh">业务板块</p>
-        <p class="biz-lead">五个板块按项目往下推进：咨询、设计、施工、调试、运维。</p>
+  <section class="home-biz" id="biz" data-biz>
+    <div class="biz-rail">
+      <div class="biz-rail-head">
+        <p class="biz-kicker">Business</p>
+        <h2>业务板块</h2>
+        <p>五个环节按项目推进，从咨询到运维一站贯通。</p>
       </div>
-      <div class="biz-board" data-biz data-aos="fade-up">
-        <div class="biz-tabs" role="tablist">
-          <button type="button" class="is-active" role="tab" aria-selected="true" data-biz-tab>工程咨询</button>
-          <button type="button" role="tab" aria-selected="false" data-biz-tab>工程设计</button>
-          <button type="button" role="tab" aria-selected="false" data-biz-tab>施工管理</button>
-          <button type="button" role="tab" aria-selected="false" data-biz-tab>调试测试</button>
-          <button type="button" role="tab" aria-selected="false" data-biz-tab>运行维护</button>
+      <div class="biz-steps" role="tablist" aria-label="业务板块">
+        <a class="is-active" href="biz-consult.html" role="tab" aria-selected="true" data-biz-tab>
+          <span>01</span><strong>工程咨询</strong>
+        </a>
+        <a href="biz-design.html" role="tab" aria-selected="false" data-biz-tab>
+          <span>02</span><strong>工程设计</strong>
+        </a>
+        <a href="biz-construct.html" role="tab" aria-selected="false" data-biz-tab>
+          <span>03</span><strong>施工管理</strong>
+        </a>
+        <a href="biz-test.html" role="tab" aria-selected="false" data-biz-tab>
+          <span>04</span><strong>调试测试</strong>
+        </a>
+        <a href="biz-maintain.html" role="tab" aria-selected="false" data-biz-tab>
+          <span>05</span><strong>运行维护</strong>
+        </a>
+      </div>
+    </div>
+    <div class="biz-stage">
+      <div class="biz-shot is-active" style="background-image:url('assets/biz/consult.jpg')" role="tabpanel">
+        <div class="biz-shot-copy">
+          <p class="biz-shot-num">01</p>
+          <h3>工程咨询</h3>
+          <p>提供工程咨询，协助客户确定项目路径与实施安排。</p>
+          <a href="biz-consult.html">查看更多 →</a>
         </div>
-        <div class="biz-panel is-active" role="tabpanel" style="background-image:url('assets/biz/consult.jpg')">
-          <div class="biz-copy">
-            <h3>工程咨询</h3>
-            <p>提供工程咨询，协助客户确定项目路径与实施安排。</p>
-            <a href="biz-consult.html">查看更多 →</a>
-          </div>
+      </div>
+      <div class="biz-shot" style="background-image:url('assets/biz/design.jpg')" role="tabpanel" hidden>
+        <div class="biz-shot-copy">
+          <p class="biz-shot-num">02</p>
+          <h3>工程设计</h3>
+          <p>从项目规划到工程设计，为机电与产业化系统提供可实施的设计方案。</p>
+          <a href="biz-design.html">查看更多 →</a>
         </div>
-        <div class="biz-panel" role="tabpanel" hidden style="background-image:url('assets/biz/design.jpg')">
-          <div class="biz-copy">
-            <h3>工程设计</h3>
-            <p>从项目规划到工程设计，为机电与产业化系统提供可实施的设计方案。</p>
-            <a href="biz-design.html">查看更多 →</a>
-          </div>
+      </div>
+      <div class="biz-shot" style="background-image:url('assets/biz/construct.jpg')" role="tabpanel" hidden>
+        <div class="biz-shot-copy">
+          <p class="biz-shot-num">03</p>
+          <h3>施工管理</h3>
+          <p>具备机电安装施工总承包一级资质，组织现场施工与工程承包。</p>
+          <a href="biz-construct.html">查看更多 →</a>
         </div>
-        <div class="biz-panel" role="tabpanel" hidden style="background-image:url('assets/biz/construct.jpg')">
-          <div class="biz-copy">
-            <h3>施工管理</h3>
-            <p>具备机电安装施工总承包一级资质，组织现场施工与工程承包。</p>
-            <a href="biz-construct.html">查看更多 →</a>
-          </div>
+      </div>
+      <div class="biz-shot" style="background-image:url('assets/biz/test.jpg')" role="tabpanel" hidden>
+        <div class="biz-shot-copy">
+          <p class="biz-shot-num">04</p>
+          <h3>调试测试</h3>
+          <p>系统建成后进行调试与测试，确认设备与管线可投入运行。</p>
+          <a href="biz-test.html">查看更多 →</a>
         </div>
-        <div class="biz-panel" role="tabpanel" hidden style="background-image:url('assets/biz/test.jpg')">
-          <div class="biz-copy">
-            <h3>调试测试</h3>
-            <p>系统建成后进行调试与测试，确认设备与管线可投入运行。</p>
-            <a href="biz-test.html">查看更多 →</a>
-          </div>
-        </div>
-        <div class="biz-panel" role="tabpanel" hidden style="background-image:url('assets/biz/maintain.jpg')">
-          <div class="biz-copy">
-            <h3>运行维护</h3>
-            <p>提供运营与维护，保障机电与供给系统持续稳定运行。</p>
-            <a href="biz-maintain.html">查看更多 →</a>
-          </div>
+      </div>
+      <div class="biz-shot" style="background-image:url('assets/biz/maintain.jpg')" role="tabpanel" hidden>
+        <div class="biz-shot-copy">
+          <p class="biz-shot-num">05</p>
+          <h3>运行维护</h3>
+          <p>提供运营与维护，保障机电与供给系统持续稳定运行。</p>
+          <a href="biz-maintain.html">查看更多 →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="page-band home-fields" id="fields">
-    <div class="wrap">
-      <div class="band-head" data-aos="fade-down">
-        <p class="outline">Fields</p>
-        <p class="zh">服务行业</p>
-        <p class="biz-lead">我们为客户服务的主要行业。</p>
-      </div>
+  <section class="home-fields" id="fields" data-fields>
+    <!-- 无悬停：5 张分图各占一栏 -->
+    <div class="fields-splits" aria-hidden="true">
+      <div class="fields-split"><span style="background-image:url('assets/fields/domain-1.jpg?v=2')"></span></div>
+      <div class="fields-split"><span style="background-image:url('assets/fields/domain-2.jpg?v=2')"></span></div>
+      <div class="fields-split"><span style="background-image:url('assets/fields/domain-3.jpg?v=2')"></span></div>
+      <div class="fields-split"><span style="background-image:url('assets/fields/domain-4.jpg?v=2')"></span></div>
+      <div class="fields-split"><span style="background-image:url('assets/fields/domain-5.jpg?v=2')"></span></div>
     </div>
-    <div class="field-row" data-aos="fade-up">
-      <a class="field-card" href="cases.html#semi">
-        <img src="assets/fields/domain-1.jpg?v=1" alt="" />
-        <span class="field-cap">
-          <strong>微电子半导体</strong>
-          <em>半导体微电子领域的系统工程。</em>
-        </span>
+    <!-- 悬停：当前栏对应的全幅图 -->
+    <div class="fields-fulls" aria-hidden="true">
+      <div class="fields-full" style="background-image:url('assets/fields/domain-1.jpg?v=2')"></div>
+      <div class="fields-full" style="background-image:url('assets/fields/domain-2.jpg?v=2')"></div>
+      <div class="fields-full" style="background-image:url('assets/fields/domain-3.jpg?v=2')"></div>
+      <div class="fields-full" style="background-image:url('assets/fields/domain-4.jpg?v=2')"></div>
+      <div class="fields-full" style="background-image:url('assets/fields/domain-5.jpg?v=2')"></div>
+    </div>
+    <div class="fields-shade" aria-hidden="true"></div>
+    <div class="fields-head">
+      <p class="fields-kicker">Fields</p>
+      <h2>服务行业</h2>
+      <i aria-hidden="true"></i>
+      <p>微电子半导体、医疗制药、机电工程、新能源与石油化工等领域的系统工程服务</p>
+    </div>
+    <div class="fields-board">
+      <a class="fields-pane" href="cases.html#semi" data-fields-pane>
+        <strong>微电子半导体</strong>
+        <i aria-hidden="true"></i>
+        <em>半导体微电子领域的系统工程，覆盖洁净厂房、特气及化学品供给等关键环节。</em>
+        <span class="fields-more"><span>了解更多 →</span><span>了解更多 →</span></span>
       </a>
-      <a class="field-card" href="cases.html#pharma">
-        <img src="assets/fields/domain-2.jpg?v=1" alt="" />
-        <span class="field-cap">
-          <strong>医疗、制药及食品</strong>
-          <em>制药、医疗与食品相关工程。</em>
-        </span>
+      <a class="fields-pane" href="cases.html#pharma" data-fields-pane>
+        <strong>医疗、制药及食品</strong>
+        <i aria-hidden="true"></i>
+        <em>制药、医疗与食品相关工程，保障工艺洁净度与运行可靠性。</em>
+        <span class="fields-more"><span>了解更多 →</span><span>了解更多 →</span></span>
       </a>
-      <a class="field-card" href="cases.html#mech">
-        <img src="assets/fields/domain-3.jpg?v=1" alt="" />
-        <span class="field-cap">
-          <strong>机电、机械工程</strong>
-          <em>机械制造及其他机电工程。</em>
-        </span>
+      <a class="fields-pane" href="cases.html#mech" data-fields-pane>
+        <strong>机电、机械工程</strong>
+        <i aria-hidden="true"></i>
+        <em>机械制造及其他机电工程，提供设计、施工与系统集成服务。</em>
+        <span class="fields-more"><span>了解更多 →</span><span>了解更多 →</span></span>
       </a>
-      <a class="field-card" href="cases.html#energy">
-        <img src="assets/fields/domain-4.jpg?v=1" alt="" />
-        <span class="field-cap">
-          <strong>新能源</strong>
-          <em>清洁能源领域的工程服务。</em>
-        </span>
+      <a class="fields-pane" href="cases.html#energy" data-fields-pane>
+        <strong>新能源</strong>
+        <i aria-hidden="true"></i>
+        <em>清洁能源领域的工程服务，助力绿色低碳项目落地与稳定运行。</em>
+        <span class="fields-more"><span>了解更多 →</span><span>了解更多 →</span></span>
       </a>
-      <a class="field-card" href="cases.html#petro">
-        <img src="assets/fields/domain-5.jpg?v=1" alt="" />
-        <span class="field-cap">
-          <strong>石油化工</strong>
-          <em>能源化工与石油化工工程。</em>
-        </span>
+      <a class="fields-pane" href="cases.html#petro" data-fields-pane>
+        <strong>石油化工</strong>
+        <i aria-hidden="true"></i>
+        <em>能源化工与石油化工工程，承接管线、机电与系统集成建设。</em>
+        <span class="fields-more"><span>了解更多 →</span><span>了解更多 →</span></span>
       </a>
     </div>
   </section>
@@ -467,7 +536,7 @@
     </div>
     <div class="footer-copy">© <span data-year></span> 江苏中核华瑞电子科技有限公司</div>
   </footer>
-  <script src="js/site.js?v=42"></script>
+  <script src="js/site.js?v=56"></script>
   <script src="js/china-map.js?v=34"></script>
 </body>
 </html>
