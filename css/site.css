@@ -3033,6 +3033,20 @@ a.project-row.is-link:hover strong {
     display: none;
   }
 
+  #location .map-split {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  #location .map-side {
+    width: 100%;
+    max-width: none;
+  }
+
+  #location .project-list {
+    max-height: min(60vh, 520px);
+  }
+
   #location,
   #partners {
     min-height: 0;
@@ -3042,7 +3056,7 @@ a.project-row.is-link:hover strong {
 
   #location .wrap.map-layout,
   #partners .wrap {
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 32px);
   }
 
   #partners .partner-grid li {
