@@ -2939,16 +2939,17 @@ a.project-row.is-link:hover strong {
     gap: 10px;
   }
 
-  .banner-copy {
+  .banner-copy,
+  .banner-copy--stack {
     left: 5%;
     right: 5%;
-    top: 32%;
+    top: 0;
+    bottom: 0;
     width: auto;
     max-width: none;
-  }
-
-  .banner-copy--stack {
-    top: 28%;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .banner-copy h3 {
@@ -3067,14 +3068,10 @@ a.project-row.is-link:hover strong {
   .profile-photos { grid-template-columns: 1fr; }
   .partner-grid { grid-template-columns: repeat(2, 1fr); }
 
-  .banner-copy {
-    top: 30%;
+  .banner-copy,
+  .banner-copy--stack {
     left: 16px;
     right: 16px;
-  }
-
-  .banner-copy--stack {
-    top: 26%;
   }
 
   .banner-copy h3 {
